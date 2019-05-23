@@ -1,7 +1,17 @@
 {
-  "name": "server",
+  "name": "gitreview-gitserver",
   "version": "1.0.0",
-  "description": "",
+  "description": "Git Server for Git Review",
+  "author": {
+    "name": "Jacob McSwain",
+    "email": "jacob@mcswain.dev",
+    "url": "https://jacob.mcswain.dev/"
+  },
+  "license": "GPL-2.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/USA-RedDragon/gitreview.git"
+  },
   "scripts": {
     "start": "npm run start:dev",
     "start:dev": "nodemon src/index.js",
@@ -9,8 +19,6 @@
     "lint": "eslint src/**/*.js",
     "lint:fix": "npm run lint -- --fix"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "node-git-server": "file:local_modules/node-git-server"
   },
