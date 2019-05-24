@@ -20,7 +20,7 @@
     "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {
-    "node-git-server": "github:USA-RedDragon/node-git-server#master"
+    "node-git-server": "git+https://github.com/USA-RedDragon/node-git-server.git"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
