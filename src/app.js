@@ -3,6 +3,7 @@ const config = require('./config');
 const authenticationHandler = require('./handlers/authentication');
 const pushHandler = require('./handlers/push');
 const fetchHandler = require('./handlers/fetch');
+const infoHandler = require('./handlers/info');
 
 module.exports = () => {
     const repos = new GitServer(
@@ -15,6 +16,7 @@ module.exports = () => {
 
     repos.on('push', pushHandler);
     repos.on('fetch', fetchHandler);
+    repos.on('info', infoHandler);
     repos.listen(config.port, () => {
         console.log(`node-git-server running at http://localhost:${config.port}`);
     });
