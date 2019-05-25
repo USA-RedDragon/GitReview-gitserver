@@ -20,7 +20,9 @@
     "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {
-    "node-git-server": "github:USA-RedDragon/node-git-server#master"
+    "mariadb": "^2.0.5",
+    "sequelize": "^5.8.6",
+    "sequelize-cli": "^5.4.0"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
