@@ -16,7 +16,7 @@
     "start": "npm run start:dev",
     "start:dev": "nodemon src/index.js",
     "start:prod": "node src/index.js",
-    "lint": "eslint src/**/*.js",
+    "lint": "eslint src/",
     "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {
