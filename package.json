@@ -18,7 +18,8 @@
     "start:prod": "node src/index.js",
     "lint": "eslint src/ test/",
     "lint:fix": "npm run lint -- --fix",
-    "test": "nyc ava"
+    "test": "nyc ava",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "dependencies": {
     "argon2": "^0.23.0",
