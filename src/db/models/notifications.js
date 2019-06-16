@@ -5,7 +5,10 @@ module.exports = function(sequelize, DataTypes) {
         title: DataTypes.STRING,
         text: DataTypes.TEXT,
         action: DataTypes.STRING,
-        global: DataTypes.BOOLEAN,
+        global: {
+            type: DataTypes.BOOLEAN,
+            default: false,
+        },
     }, {
         tableName: 'notifications',
     });
