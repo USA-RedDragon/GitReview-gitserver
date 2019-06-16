@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "npm run start:dev",
-    "start:dev": "nodemon src/index.js",
+    "start:dev": "nodemon -L src/index.js",
     "start:prod": "node src/index.js",
     "lint": "eslint src/ test/",
     "lint:fix": "npm run lint -- --fix",
